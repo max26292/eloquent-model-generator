@@ -20,7 +20,7 @@ class GenerateCommandEventListener
             return;
         }
 
-        $userTypes = config('eloquent_model_generator.db_types', []);
+        $userTypes = config('eloquent_model_generator.db_types', [])??[];
         foreach ($userTypes as $type => $value) {
             $this->typeRegistry->registerType($type, $value);
         }

@@ -31,8 +31,9 @@ class TypeRegistry
 
     public function __construct(private DatabaseManager $databaseManager)
     {
+        $databaseConnection  = config('eloquent_model_generator.connection',null);
         foreach ($this->types as $sqlType => $phpType) {
-            $this->registerDoctrineTypeMapping($sqlType, $phpType);
+            $this->registerDoctrineTypeMapping($sqlType, $phpType,$databaseConnection);
         }
     }
 
