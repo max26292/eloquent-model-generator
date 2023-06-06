@@ -1,5 +1,5 @@
 {
-    "name": "krlove/eloquent-model-generator",
+    "name": "max26292/eloquent-model-generator",
     "description": "Eloquent Model Generator",
     "version": "2.0.1",
     "license": "MIT",
@@ -14,11 +14,11 @@
         }
     },
     "require": {
-        "php": "^8.0",
-        "illuminate/database": "^9.0",
-        "illuminate/support": "^9.0",
-        "illuminate/config": "^9.0",
-        "illuminate/console": "^9.0",
+        "php": "^8.0|^8.1|^8.2",
+        "illuminate/database": "^9.0|^10.0",
+        "illuminate/support": "^9.0|^10.0",
+        "illuminate/config": "^9.0|^10.0",
+        "illuminate/console": "^9.0|^10.0",
         "doctrine/dbal": "^3.0",
         "krlove/code-generator": "^1.0"
     },
